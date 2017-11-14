@@ -1,0 +1,1211 @@
+[gd_scene load_steps=13 format=1]
+
+[ext_resource path="res://Sprites/pGrass1.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/pGrass2.png" type="Texture" id=2]
+[ext_resource path="res://Scripts/move.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/pPlayer.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/pGun.png" type="Texture" id=5]
+[ext_resource path="res://Sprites/pEnemy.png" type="Texture" id=6]
+[ext_resource path="res://Sprites/pThings.png" type="Texture" id=7]
+[ext_resource path="res://Sprites/pBullet.png" type="Texture" id=8]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10.1111, 14.9143 )
+
+[sub_resource type="RectangleShape2D" id=2]
+
+custom_solver_bias = 0.0
+extents = Vector2( 11, 11.1034 )
+
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 12, 13 )
+
+[sub_resource type="RectangleShape2D" id=4]
+
+custom_solver_bias = 0.0
+extents = Vector2( 3, 2 )
+
+[node name="World01" type="Node2D"]
+
+[node name="Tiles" type="Node2D" parent="."]
+
+editor/display_folded = true
+z/z = -3
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Grass" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 288 )
+texture = ExtResource( 1 )
+
+[node name="Grass1" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass2" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 192 )
+texture = ExtResource( 1 )
+
+[node name="Grass3" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 352 )
+texture = ExtResource( 1 )
+
+[node name="Grass4" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 384 )
+texture = ExtResource( 1 )
+
+[node name="Grass5" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 288 )
+texture = ExtResource( 1 )
+
+[node name="Grass6" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 160 )
+texture = ExtResource( 1 )
+
+[node name="Grass7" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 96 )
+texture = ExtResource( 1 )
+
+[node name="Grass8" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass9" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 160 )
+texture = ExtResource( 1 )
+
+[node name="Grass10" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass11" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 416 )
+texture = ExtResource( 1 )
+
+[node name="Grass12" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 352 )
+texture = ExtResource( 1 )
+
+[node name="Grass13" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass14" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 416 )
+texture = ExtResource( 1 )
+
+[node name="Grass15" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass16" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass17" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 32 )
+texture = ExtResource( 1 )
+
+[node name="Grass18" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 96 )
+texture = ExtResource( 1 )
+
+[node name="Grass19" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 32, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass20" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 384 )
+texture = ExtResource( 1 )
+
+[node name="Grass21" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 416 )
+texture = ExtResource( 1 )
+
+[node name="Grass22" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 384 )
+texture = ExtResource( 1 )
+
+[node name="Grass23" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass24" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass25" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 192 )
+texture = ExtResource( 1 )
+
+[node name="Grass26" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass27" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 224 )
+texture = ExtResource( 1 )
+
+[node name="Grass28" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 288 )
+texture = ExtResource( 1 )
+
+[node name="Grass29" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 288 )
+texture = ExtResource( 1 )
+
+[node name="Grass30" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass31" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 160 )
+texture = ExtResource( 1 )
+
+[node name="Grass32" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass33" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass34" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 352 )
+texture = ExtResource( 1 )
+
+[node name="Grass35" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass36" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass37" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 192 )
+texture = ExtResource( 1 )
+
+[node name="Grass38" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 64 )
+texture = ExtResource( 1 )
+
+[node name="Grass39" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 160 )
+texture = ExtResource( 1 )
+
+[node name="Grass40" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass41" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass42" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 224 )
+texture = ExtResource( 1 )
+
+[node name="Grass43" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 352 )
+texture = ExtResource( 1 )
+
+[node name="Grass44" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 352 )
+texture = ExtResource( 1 )
+
+[node name="Grass45" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 352 )
+texture = ExtResource( 1 )
+
+[node name="Grass46" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass47" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass48" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 288 )
+texture = ExtResource( 1 )
+
+[node name="Grass49" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 320 )
+texture = ExtResource( 1 )
+
+[node name="Grass50" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 384 )
+texture = ExtResource( 1 )
+
+[node name="Grass51" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 384 )
+texture = ExtResource( 1 )
+
+[node name="Grass52" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 384 )
+texture = ExtResource( 1 )
+
+[node name="Grass53" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 288 )
+texture = ExtResource( 1 )
+
+[node name="Grass54" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 224 )
+texture = ExtResource( 1 )
+
+[node name="Grass55" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 160 )
+texture = ExtResource( 1 )
+
+[node name="Grass56" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass57" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 96 )
+texture = ExtResource( 1 )
+
+[node name="Grass58" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass59" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 160 )
+texture = ExtResource( 1 )
+
+[node name="Grass60" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 224 )
+texture = ExtResource( 1 )
+
+[node name="Grass61" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 224 )
+texture = ExtResource( 1 )
+
+[node name="Grass62" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 192 )
+texture = ExtResource( 1 )
+
+[node name="Grass63" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass64" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 192 )
+texture = ExtResource( 1 )
+
+[node name="Grass65" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 256 )
+texture = ExtResource( 1 )
+
+[node name="Grass66" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 224 )
+texture = ExtResource( 1 )
+
+[node name="Grass67" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 192 )
+texture = ExtResource( 1 )
+
+[node name="Grass68" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass69" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 128 )
+texture = ExtResource( 1 )
+
+[node name="Grass 2" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass70" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass71" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass72" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass73" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass74" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass75" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass76" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass77" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass78" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass79" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass80" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass81" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass82" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass83" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass84" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass85" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass86" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 32, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass87" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass88" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass89" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass90" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass91" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass92" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass93" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass94" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass95" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass96" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass97" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass98" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass99" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass100" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass101" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass102" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass103" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass104" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass105" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass106" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass107" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass108" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass109" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass110" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass111" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass112" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 64 )
+texture = ExtResource( 2 )
+
+[node name="Grass113" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass114" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass115" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 64 )
+texture = ExtResource( 2 )
+
+[node name="Grass116" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass117" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass118" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass119" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass120" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass121" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass122" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass123" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass124" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass125" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass126" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass127" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass128" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass129" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 192 )
+texture = ExtResource( 2 )
+
+[node name="Grass130" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 160 )
+texture = ExtResource( 2 )
+
+[node name="Grass131" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass132" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 128 )
+texture = ExtResource( 2 )
+
+[node name="Grass133" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass134" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass135" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass136" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass137" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass138" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass139" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass140" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass141" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass142" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass143" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass144" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass145" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass146" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass147" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass148" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass149" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass150" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass151" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass152" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass153" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass154" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass155" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass156" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 416, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass157" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 448, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass158" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 480, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass159" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass160" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass161" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass162" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass163" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass164" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass165" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass166" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 608, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass167" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 608, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass168" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass169" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 224 )
+texture = ExtResource( 2 )
+
+[node name="Grass170" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass171" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass172" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 544, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass173" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass174" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 320 )
+texture = ExtResource( 2 )
+
+[node name="Grass175" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass176" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 512, 256 )
+texture = ExtResource( 2 )
+
+[node name="Grass177" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 608, 288 )
+texture = ExtResource( 2 )
+
+[node name="Grass178" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass179" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 384, 448 )
+texture = ExtResource( 2 )
+
+[node name="Grass180" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 352, 448 )
+texture = ExtResource( 2 )
+
+[node name="Grass181" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 320, 448 )
+texture = ExtResource( 2 )
+
+[node name="Grass182" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 288, 448 )
+texture = ExtResource( 2 )
+
+[node name="Grass183" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 256, 448 )
+texture = ExtResource( 2 )
+
+[node name="Grass184" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass185" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 448 )
+texture = ExtResource( 2 )
+
+[node name="Grass186" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass187" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 448 )
+texture = ExtResource( 2 )
+
+[node name="Grass188" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass189" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 416 )
+texture = ExtResource( 2 )
+
+[node name="Grass190" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass191" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass192" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 32, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass193" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 32, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass194" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass195" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 576, 384 )
+texture = ExtResource( 2 )
+
+[node name="Grass196" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 608, 352 )
+texture = ExtResource( 2 )
+
+[node name="Grass197" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 224, 64 )
+texture = ExtResource( 2 )
+
+[node name="Grass198" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 192, 64 )
+texture = ExtResource( 2 )
+
+[node name="Grass199" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 160, 64 )
+texture = ExtResource( 2 )
+
+[node name="Grass200" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 128, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass201" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 96, 96 )
+texture = ExtResource( 2 )
+
+[node name="Grass202" type="Sprite" parent="Tiles"]
+
+transform/pos = Vector2( 64, 128 )
+texture = ExtResource( 2 )
+
+[node name="Player" type="RigidBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 560, 256 )
+input/pickable = false
+shapes/0/shape = SubResource( 1 )
+shapes/0/transform = Matrix32( 1.03846, 0, 0, 0.972222, -0.5, -0.5 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+script/script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Player"]
+
+texture = ExtResource( 4 )
+
+[node name="Collision" type="CollisionShape2D" parent="Player"]
+
+transform/pos = Vector2( -0.5, -0.5 )
+transform/scale = Vector2( 1.03846, 0.972222 )
+shape = SubResource( 1 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Gun" type="KinematicBody2D" parent="Player"]
+
+input/pickable = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+
+[node name="Sprite" type="Sprite" parent="Player/Gun"]
+
+transform/pos = Vector2( 7, -2 )
+z/z = -2
+texture = ExtResource( 5 )
+
+[node name="Enemy" type="RigidBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 480, 256 )
+input/pickable = false
+shapes/0/shape = SubResource( 2 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1.03571, 0, -0.5 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+mode = 0
+mass = 1.0
+friction = 1.0
+bounce = 0.0
+gravity_scale = 0.0
+custom_integrator = false
+continuous_cd = 0
+contacts_reported = 0
+contact_monitor = false
+sleeping = false
+can_sleep = true
+velocity/linear = Vector2( 0, 0 )
+velocity/angular = 0.0
+damp_override/linear = -1.0
+damp_override/angular = -1.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Enemy"]
+
+texture = ExtResource( 6 )
+
+[node name="Collision" type="CollisionShape2D" parent="Enemy"]
+
+transform/pos = Vector2( 0, -0.5 )
+transform/scale = Vector2( 1, 1.03571 )
+shape = SubResource( 2 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Object" type="StaticBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 352, 256 )
+input/pickable = false
+shapes/0/shape = SubResource( 3 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+constant_linear_velocity = Vector2( 0, 0 )
+constant_angular_velocity = 0.0
+friction = 1.0
+bounce = 0.0
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Object"]
+
+texture = ExtResource( 7 )
+
+[node name="Collision" type="CollisionShape2D" parent="Object"]
+
+shape = SubResource( 3 )
+trigger = false
+_update_shape_index = 0
+
+[node name="Bullet" type="KinematicBody2D" parent="."]
+
+editor/display_folded = true
+transform/pos = Vector2( 192, 256 )
+input/pickable = false
+shapes/0/shape = SubResource( 4 )
+shapes/0/transform = Matrix32( 1, 0, 0, 1, 0, 0 )
+shapes/0/trigger = false
+collision/layers = 1
+collision/mask = 1
+collision/margin = 0.08
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Bullet"]
+
+texture = ExtResource( 8 )
+
+[node name="Collision" type="CollisionShape2D" parent="Bullet"]
+
+shape = SubResource( 4 )
+trigger = false
+_update_shape_index = 0
+
+
